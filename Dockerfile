@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-ENV MONGODB_VERSION=4.2.3
+ENV MONGODB_VERSION=4.2.13
 
 RUN apt-get update \
     && apt-get install -y curl gnupg \

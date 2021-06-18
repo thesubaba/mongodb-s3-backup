@@ -15,4 +15,6 @@ ADD backup.sh /root/
 
 RUN chmod +x backup.sh
 
+RUN sed -i -e 's/\r$//' backup.sh
+
 CMD /root/backup.sh

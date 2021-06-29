@@ -35,6 +35,6 @@ RUN crontab /etc/cron.d/container_cronjob
 RUN touch /var/log/cron.log
 
 # Running commands for the startup of a container.
-CMD ["/bin/bash", "-c", "cron && tail -f /var/log/cron.log"]
+CMD ["/bin/bash", "-c", "printenv > /etc/environment && cron && tail -f /var/log/cron.log"]
 
 # CMD /root/backup.sh

@@ -32,4 +32,3 @@ rm .s3cfg
 
 echo "Removing local backup"
 rm -rf bak/mongodb_backup
-
